@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ItemController;
+use App\Http\Controllers\ItemsController;
 use App\Http\Controllers\ClaimsController;
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +14,7 @@ use App\Http\Controllers\ClaimsController;
 |
 */
 
-Route::resource('/items', ItemController::class);
+Route::resource('/items', ItemsController::class);
 Route::resource('/claims', ClaimsController::class);
 Route::get('/', function(){
     return view('h');
